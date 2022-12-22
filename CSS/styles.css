@@ -155,25 +155,19 @@ img {
 .menu-tel:focus {
    color: var(--primery-band);
 }
-.menu-burger {
-   /* display: inline-flex;
+.button__burger {
+   display: inline-flex;
    margin: 0;
    padding: 0;
    border: none;
-   background-color: transparent; */
-}
-.button__burger {
+   background-color: transparent;
    cursor: pointer;
-   width: 40px;
-   height: 40px;
 }
 .button__burger-open {
    width: 40px;
    height: 40px;
 }
 .button__icon{
-   display: block;
-   fill: #000;
    width: 32px;
    height: 22px;
 }
@@ -727,6 +721,8 @@ screen and (min-resolution: 2dppx) {
    display: flex;
    align-items: center;
    justify-content: center;
+   margin-left: auto;    
+   margin-right: auto;
 
    padding: 8px 24px;
 
