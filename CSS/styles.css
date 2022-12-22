@@ -163,13 +163,13 @@ img {
    background-color: transparent; */
 }
 .button__burger {
+   cursor: pointer;
    width: 40px;
    height: 40px;
 }
 .button__burger-open {
-   fill: #000;
-   width: 32px;
-   height: 22px;
+   width: 40px;
+   height: 40px;
 }
 .button__icon{
    display: block;
@@ -189,11 +189,14 @@ img {
    height: 100%;
 
    opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-burger.is-open {
-   opacity: 0;
-   pointer-events: none;
+   opacity: 1;
+   visibility: visible;
+   pointer-events: auto;
 }
 .menu__burger-button {
    position: absolute;
