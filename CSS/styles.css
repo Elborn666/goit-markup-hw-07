@@ -159,7 +159,7 @@ img {
    height: 600px;
    margin: 0 auto;
    background-color: var(--title-color);
-   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
