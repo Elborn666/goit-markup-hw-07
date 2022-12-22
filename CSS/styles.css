@@ -193,6 +193,7 @@ img {
 }
 .menu-burger.is-open {
    opacity: 1;
+   pointer-events: none;
 }
 .menu__burger-button {
    position: absolute;
