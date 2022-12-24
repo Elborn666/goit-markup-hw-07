@@ -249,6 +249,8 @@ img {
 }
 .mobile-header.is-open {
    display: block;
+   width: 100vw;
+   height: 100vh;
 }
 .mobile-header {
    display: none;
@@ -308,6 +310,8 @@ img {
    align-items: center;
 }
 .menu__burger {
+   width: 100vw;
+   height: 100vh;
    padding: 80px 40px 40px 40px;
 }
 .menu__burger-item {
@@ -327,7 +331,7 @@ img {
    color: var(--button-hover-color);
 }
 .menu__burger-contacts {
-   margin-top: 284px;
+   margin-top: 40px;
 }
 .menu__burger-contact {
    margin-top: 40px;
@@ -356,7 +360,9 @@ img {
 }
 .menu__burger-list {
    display: flex;
+   flex-wrap: wrap;
    column-gap: 56px;
+   row-gap: 15px;
    margin-top: 48px;
 }
 .menu__burger-icons {
