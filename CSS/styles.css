@@ -227,7 +227,7 @@ img {
    background-color: transparent;
    border: 1px solid transparent;
    padding: 2px;
-   z-index: 1000;
+   z-index: 50;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -243,7 +243,7 @@ img {
    height: 796px;
    background-color: #FFFFFF;
    position: absolute;
-   z-index: 999;
+   /* z-index: 999; */
    top: 0;
    left: 0%;
 }
@@ -747,13 +747,13 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 /*=========================== PORTFOLIO ============================*/
 .portfolio-section {
-   padding-bottom: 120px;
+   padding-bottom: 48px;
 }
 .portfolio-title {
    padding: 32px 16px;
 
    border: 0.5px solid #F4F4FD;
-   ;
+
    border-top: none;
    color: var(--title-color);
 }
@@ -767,8 +767,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 .portfolio-buttons {
    display: flex;
-   margin: 96px 0px 72px 0px;
-   justify-content: center;
+   flex-wrap: wrap;
+   margin: 48px 0px;
+   row-gap: 16px;
 }
 .portfolio-list {
    margin-right: 24px;
@@ -844,6 +845,42 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+   .portfolio-buttons {
+      row-gap: 16px;
+      }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+.portfolio-card {
+   margin-bottom: 72px;
+   margin-right: 24px;
+   width: 360px;
+}
+.portfolio-card:nth-child(n) {
+   margin-right: 0px;
+}
+.portfolio-card:nth-last-child(-n+2) {
+   margin-bottom: 0px;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .customers-partner {
+      column-gap: 24px;
+   }
+   .portfolio-section {
+      padding-bottom: 96px;
+   }
+   .portfolio-buttons {
+      justify-content: center;
+      margin: 64px 0px;
+   }
+}
+@media screen and (min-width: 1200px) {
+   .customers-section {
+      padding-bottom: 120px;
+   }
 }
 /*=========================== FOOTER ============================*/
 .footer-section {
@@ -1009,7 +1046,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 /*=========================== BACKDROP ============================*/
 .backdrop {
    position: fixed;
-   z-index: 10;
+   z-index: 60;
    top: 0;
    left: 0;
    height: 100%;

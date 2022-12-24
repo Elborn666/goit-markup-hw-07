@@ -16,21 +16,70 @@
 
 <body>
 
-    <header class="menu-shadow">
-        <div class="menu-container container">
-            <nav class="menu-navigation">
+    <header>
+        <div class="container">
+            <div class="menu-container">
                 <a href="./index.html" class="menu-logo"><span>Web</span>Studio</a>
-                <ul class="menu-items">
-                    <li class="menu-list"><a href="./index.html" class="menu-item">Studio</a></li>
-                    <li class="menu-list"><a href="#" class="menu-item active">Portfolio</a></li>
-                    <li class="menu-list"><a href="#" class="menu-item">Contacts</a></li>
+                <nav class="menu-navigation">
+                    <ul class="menu-items">
+                        <li class="menu-list"><a href="#" class="menu-item active">Studio</a></li>
+                        <li class="menu-list"><a href="./portfolio.html" class="menu-item">Portfolio</a></li>
+                        <li class="menu-list"><a href="#" class="menu-item">Contacts</a></li>
+                    </ul>
+                </nav>
+                <ul class="menu-contacts">
+                    <li class="menu-contact"><a href="mailto:info@devstudio.com" class="menu-email">info@devstudio.com</a>
+                    </li>
+                    <li class="menu-contact"><a href="tel:+110001111111" class="menu-tel">+11 (000) 111-11-11</a></li>
                 </ul>
-            </nav>
-            <ul class="menu-contacts">
-                <li class="menu-list"><a href="mailto:info@devstudio.com" class="menu-email">info@devstudio.com</a>
-                </li>
-                <li class="menu-list"><a href="tel:+110001111111" class="menu-tel">+11 (000) 111-11-11</a></li>
-            </ul>
+                <button type="button" class="menu-btn  is-open js-open-menu" aria-expanded="false" data-menu>
+                    <svg class="burger" width="40" height="40" aria-label="Переключатель моб меню">
+                        <use class="icon-cross" href="./images/spriteicons.svg#icon-close-black"></use>
+                        <use class="icon-burger" href="./images/spriteicons.svg#menu_btn" class="burger-icon"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mobile-header js-menu-container">
+                <div class="menu__burger" id="mobile-menu">
+                    <ul class="menu__burger-nav">
+                        <li class="menu__burger-item"><a href="#" class="menu__burger-link">Studio</a></li>
+                        <li class="menu__burger-item"><a href="#" class="menu__burger-link">Portfolio</a></li>
+                        <li class="menu__burger-item"><a href="#" class="menu__burger-link">Contacts</a>
+                        </li>
+                    </ul>
+                    <ul class="menu__burger-contacts">
+                        <li class="menu__burger-contact"><a href="tel:+110001111111" class="menu__burger-tel">+11
+                                (000) 111-11-11</a>
+                        </li>
+                        <li class="menu__burger-contact"><a href="mailto:info@devstudio.com"
+                                class="menu__burger-email">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="menu__burger-list">
+                        <li><a href="#" class="menu__burger-icons">
+                                <svg class="menu__burger-icon">
+                                    <use href="./images/spriteicons.svg#icon-instagramsmall"></use>
+                                </svg>
+                            </a></li>
+                        <li><a href="#" class="menu__burger-icons">
+                                <svg class="menu__burger-icon">
+                                    <use href="./images/spriteicons.svg#icon-twitsmall"></use>
+                                </svg>
+                            </a></li>
+                        <li><a href="#" class="menu__burger-icons">
+                                <svg class="menu__burger-icon">
+                                    <use href="./images/spriteicons.svg#icon-fbsmall"></use>
+                                </svg>
+                            </a></li>
+                        <li><a href="#" class="menu__burger-icons">
+                                <svg class="menu__burger-icon">
+                                    <use href="./images/spriteicons.svg#icon-linkedinsmall"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -47,7 +96,7 @@
                 <ul class="portfolio-cards">
                     <li class="portfolio-card">
                         <div class="portfolio-overlay">
-                            <img src="./images/portfolio/app.jpg" width="360" alt="mobile app">
+                            <img srcset="./images/portfolio/app.jpg 1x, ./images/portfolio/app@2x.jpg 2x" src="./images/portfolio/app.jpg" width="360" alt="mobile app">
                             <div class="overlay">
                                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                     App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -61,7 +110,7 @@
                     </li>
                     <li class="portfolio-card">
                         <div class="portfolio-overlay">
-                            <img src="./images/portfolio/phone.jpg" width="360" alt="phone with  QR">
+                            <img srcset="./images/portfolio/phone.jpg 1x, ./images/portfolio/phone@2x.jpg 2x" src="./images/portfolio/phone.jpg" width="360" alt="phone with  QR">
                             <div class="overlay">
                                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                     App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -75,7 +124,7 @@
                     </li>
                     <li class="portfolio-card">
                         <div class="portfolio-overlay">
-                            <img src="./images/portfolio/note.jpg" width="360" alt="notebook and phone">
+                            <img srcset="./images/portfolio/note.jpg 1x, ./images/portfolio/note@2x.jpg 2x" src="./images/portfolio/note.jpg" width="360" alt="notebook and phone">
                             <div class="overlay">
                                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                     App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -89,7 +138,7 @@
                     </li>
                     <li class="portfolio-card">
                         <div class="portfolio-overlay">
-                            <img src="./images/portfolio/taxi.jpg" width="360" alt="hands on the wheel">
+                            <img srcset="./images/portfolio/taxi.jpg 1x, ./images/portfolio/taxi@2x.jpg 2x" src="./images/portfolio/taxi.jpg" width="360" alt="hands on the wheel">
                             <div class="overlay">
                                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                     App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -103,7 +152,7 @@
                     </li>
                     <li class="portfolio-card">
                         <div class="portfolio-overlay">
-                            <img src="./images/portfolio/theme.jpg" width="360" alt="blue theme">
+                            <img srcset="./images/portfolio/theme.jpg 1x, ./images/portfolio/theme@2x.jpg 2x" src="./images/portfolio/theme.jpg" width="360" alt="blue theme">
                             <div class="overlay">
                                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                     App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -117,7 +166,7 @@
                     </li>
                     <li class="portfolio-card">
                         <div class="portfolio-overlay">
-                            <img src="./images/portfolio/girl.jpg" width="360" alt="girl in yellow">
+                            <img srcset="./images/portfolio/girl.jpg 1x, ./images/portfolio/girl@2x.jpg 2x" src="./images/portfolio/girl.jpg" width="360" alt="girl in yellow">
                             <div class="overlay">
                                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                     App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -131,7 +180,7 @@
                     </li>
                     <li class="portfolio-card">
                         <div class="portfolio-overlay">
-                            <img src="./images/portfolio/card.jpg" width="360" alt="instagram stories">
+                            <img srcset="./images/portfolio/card.jpg 1x, ./images/portfolio/card@2x.jpg 2x" src="./images/portfolio/card.jpg" width="360" alt="instagram stories">
                             <div class="overlay">
                                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                     App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -145,7 +194,7 @@
                     </li>
                     <li class="portfolio-card">
                         <div class="portfolio-overlay">
-                            <img src="./images/portfolio/food.jpg" width="360" alt="food on bag">
+                            <img srcset="./images/portfolio/food.jpg 1x, ./images/portfolio/food@2x.jpg 2x" src="./images/portfolio/food.jpg" width="360" alt="food on bag">
                             <div class="overlay">
                                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                     App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -159,7 +208,7 @@
                     </li>
                     <li class="portfolio-card">
                         <div class="portfolio-overlay">
-                            <img src="./images/portfolio/coffe.jpg" width="360" alt="make coffee">
+                            <img srcset="./images/portfolio/coffe.jpg 1x, ./images/portfolio/coffe@2x.jpg 2x" src="./images/portfolio/coffe.jpg" width="360" alt="make coffee">
                             <div class="overlay">
                                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                     App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
