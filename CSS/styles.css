@@ -101,7 +101,6 @@ img {
 }
 .menu-logo {
    display: inline-block;
-   margin-right: 77px;
    padding: 24px 0px;
 
    font-family: 'Raleway', sans-serif;
@@ -112,6 +111,7 @@ img {
 }
 .menu-navigation {
    display: flex;
+   flex-wrap: nowrap;
    align-items: center;
 }
 .menu-items {
@@ -173,8 +173,49 @@ img {
    .menu-items {
       display: flex;
    }
+   .menu-logo {
+      margin-right: 123px;
+   }
+   .menu-navigation {
+      margin-right: 118px;
+   }
+   .menu-contact {
+      margin: 0px 0px 4px 0px;
+   }
+   .menu-contact:last-child {
+      margin: 0px;
+   }
+   .menu-email,
+   .menu-tel {
+      font-size: 12px;
+      line-height: 1.33;
+   }
+}
+@media screen and (min-width: 768px), (min-width: 1200px) {
    .menu-contacts {
       display: flex;
+      flex-direction: column;
+   }
+}
+@media screen and (min-width: 1200px) {
+   .menu-contacts {
+      flex-direction: row;
+   }
+   .menu-contact {
+      margin: 0px 40px 0px 0px;
+   }
+   .menu-contact:last-child {
+      margin: 0px;
+   }
+   .menu-logo {
+      margin-right: 76px;
+   }
+   .menu-navigation {
+      margin-right: 0px;
+   }
+   .menu-email,
+   .menu-tel {
+      font-size: inherit;
    }
 }
 /*================== MENU BURGER ================== */
@@ -332,6 +373,11 @@ img {
    width: 24px;
    height: 24px;
 }
+@media screen and (min-width: 768px) {
+   .menu-btn {
+      display: none;
+   }
+}
 /*============ HERO ================== */
 .hero-section {
    padding: 112px 0px;
@@ -474,11 +520,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
    }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-   .list-items {
-      margin-right: -24px;
-   }
    .list-item {
-      flex-basis: calc((100%-2*24)/2);
+      flex-basis: calc((100%-24)/2);
    }
    .list-item:nth-last-child(-n+2) {
       margin-bottom: 0px;
@@ -617,6 +660,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
    .team-item:nth-last-child(-n+2) {
       margin-bottom: 0px;
    }
+   .team-item:nth-child(2n) {
+      margin-right: 0px;
+   }
 }
 @media screen and (min-width: 1200px) {
    .team-section {
@@ -627,6 +673,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
    }
    .team-item {
       margin-bottom: 0px;
+   }
+   .team-item:last-child {
+      margin-right: 0px;
    }
 }
 /*=========================== CUSTOMERS ============================*/
@@ -983,8 +1032,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
    left: 50%;
    transform: translate(-50%, -50%) scale(1);
 
-   max-height: 579px;
-   max-width: 408px;
+   height: 579px;
+   width: 408px;
    background-color: #fcfcfc;
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 4px;

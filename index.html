@@ -20,14 +20,6 @@
         <div class="container">
             <div class="menu-container">
                 <a href="./index.html" class="menu-logo"><span>Web</span>Studio</a>
-                <button type="button" class="menu-btn  is-open js-open-menu" aria-expanded="false" data-menu>
-                    <svg class="burger" width="40" height="40" aria-label="Переключатель моб меню">
-                        <use class="icon-cross" href="./images/spriteicons.svg#icon-close-black"></use>
-                        <use class="icon-burger" href="./images/spriteicons.svg#menu_btn" class="burger-icon"></use>
-                    </svg>
-                </button>
-            </div>
-            <div class="mobile-header js-menu-container">
                 <nav class="menu-navigation">
                     <ul class="menu-items">
                         <li class="menu-list"><a href="#" class="menu-item active">Studio</a></li>
@@ -36,10 +28,18 @@
                     </ul>
                 </nav>
                 <ul class="menu-contacts">
-                    <li class="menu-list"><a href="mailto:info@devstudio.com" class="menu-email">info@devstudio.com</a>
+                    <li class="menu-contact"><a href="mailto:info@devstudio.com" class="menu-email">info@devstudio.com</a>
                     </li>
-                    <li class="menu-list"><a href="tel:+110001111111" class="menu-tel">+11 (000) 111-11-11</a></li>
+                    <li class="menu-contact"><a href="tel:+110001111111" class="menu-tel">+11 (000) 111-11-11</a></li>
                 </ul>
+                <button type="button" class="menu-btn  is-open js-open-menu" aria-expanded="false" data-menu>
+                    <svg class="burger" width="40" height="40" aria-label="Переключатель моб меню">
+                        <use class="icon-cross" href="./images/spriteicons.svg#icon-close-black"></use>
+                        <use class="icon-burger" href="./images/spriteicons.svg#menu_btn" class="burger-icon"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mobile-header js-menu-container">
                 <div class="menu__burger" id="mobile-menu">
                     <ul class="menu__burger-nav">
                         <li class="menu__burger-item"><a href="#" class="menu__burger-link">Studio</a></li>
@@ -50,7 +50,7 @@
                     <ul class="menu__burger-contacts">
                         <li class="menu__burger-contact"><a href="tel:+110001111111" class="menu__burger-tel">+11
                                 (000) 111-11-11</a>
-                            </li>
+                        </li>
                         <li class="menu__burger-contact"><a href="mailto:info@devstudio.com"
                                 class="menu__burger-email">info@devstudio.com</a>
                         </li>
