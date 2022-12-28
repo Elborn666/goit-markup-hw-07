@@ -935,7 +935,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
    color: #ffffff;
 }
 .footer-text {
-   width: 284px;
+   width: 264px;
    margin-top: 16px;
 
    line-height: 1.5;
@@ -1065,6 +1065,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
    }
    .footer-social {
       align-items: start;
+   }
+   .footer-subscribe {
+      margin-left: -83px;
    }
 }
 @media screen and (min-width: 1200px) {
