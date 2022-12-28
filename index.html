@@ -28,14 +28,15 @@
                     </ul>
                 </nav>
                 <ul class="menu-contacts">
-                    <li class="menu-contact"><a href="mailto:info@devstudio.com" class="menu-email">info@devstudio.com</a>
+                    <li class="menu-contact"><a href="mailto:info@devstudio.com"
+                            class="menu-email">info@devstudio.com</a>
                     </li>
                     <li class="menu-contact"><a href="tel:+110001111111" class="menu-tel">+11 (000) 111-11-11</a></li>
                 </ul>
                 <button type="button" class="menu-btn  is-open js-open-menu" aria-expanded="false" data-menu>
                     <svg class="burger" width="40" height="40" aria-label="Переключатель моб меню">
                         <use class="icon-cross" href="./images/spriteicons.svg#icon-close-black"></use>
-                        <use class="icon-burger" href="./images/spriteicons.svg#menu_btn" class="burger-icon"></use>
+                        <use class="icon-burger" href="./images/spriteicons.svg#menu_btn"></use>
                     </svg>
                 </button>
             </div>
@@ -43,7 +44,8 @@
                 <div class="menu__burger" id="mobile-menu">
                     <ul class="menu__burger-nav">
                         <li class="menu__burger-item"><a href="#" class="menu__burger-link">Studio</a></li>
-                        <li class="menu__burger-item"><a href="./portfolio.html" class="menu__burger-link">Portfolio</a></li>
+                        <li class="menu__burger-item"><a href="./portfolio.html" class="menu__burger-link">Portfolio</a>
+                        </li>
                         <li class="menu__burger-item"><a href="#" class="menu__burger-link">Contacts</a>
                         </li>
                     </ul>
@@ -373,7 +375,7 @@
                     </li>
                 </ul>
             </div>
-            <form action="" class="footer-subscribe">
+            <form class="footer-subscribe">
                 <h2 class="form-title">Subscribe</h2>
                 <div class="form-all">
                     <input type="email" name="email" id="email" class="form-input" placeholder="E-mail">
@@ -385,6 +387,7 @@
                     </button>
                 </div>
             </form>
+        </div>
     </footer>
 
     <div data-modal class="backdrop is-hidden">
@@ -421,7 +424,7 @@
                         </svg>
                     </div>
                     <div class="modal-form-textarea">
-                        <textarea name="comment" id="comment" cols="" rows="10" class="modal-form-input-textarea"
+                        <textarea name="comment" id="comment" rows="10" class="modal-form-input-textarea"
                             placeholder="Text input"></textarea>
                         <label for="comment" class="modal-form-label-textarea">Comment</label>
                     </div>
@@ -429,7 +432,7 @@
                         <input type="checkbox" name="policy" id="policy"
                             class="modal-form-input-checkbox visually-hidden">
                         <label for="policy" class="modal-form-label-checkbox">I accept the terms and conditions of the
-                            &nbsp<a href="#" class="modal-policy"><span>Privacy Policy</span></a></label>
+                            &nbsp; <a href="#" class="modal-policy"><span>Privacy Policy</span></a></label>
                     </div>
                     <div class="modal-form-button">
                         <button class="modal-form-button-send" type="submit">Send</button>
