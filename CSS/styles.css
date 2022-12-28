@@ -310,6 +310,8 @@ img {
    align-items: center;
 }
 .menu__burger {
+   display: flex;
+   flex-direction: column;
    width: 100vw;
    height: 100vh;
    padding: 80px 40px 40px 40px;
@@ -331,7 +333,7 @@ img {
    color: var(--button-hover-color);
 }
 .menu__burger-contacts {
-   margin-top: 40px;
+   margin-top: auto;
 }
 .menu__burger-contact {
    margin-top: 40px;
@@ -388,7 +390,7 @@ img {
 .hero-section {
    padding: 112px 0px;
    max-width: 1600px;
-   height: 600px;
+   height: 432px;
    margin: 0 auto;
    background-color: var(--title-color);
    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/people-office480x1.jpg');
@@ -471,9 +473,17 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
       line-height: 1.07;
    }
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+   .hero-section {
+      height: 436px;
+   }
+}
 @media screen and (min-width: 1200px) {
    .hero-section {
       padding: 188px 0px;
+   }
+   .hero-section {
+      height: 600px;
    }
 }
 /*==================== LIST ======================*/
@@ -538,6 +548,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
    }
 }
 @media screen and (min-width: 1200px) {
+   .list-container {
+      padding-bottom: 0px;
+   }
    .list-items {
       flex-wrap: nowrap;
    }
@@ -658,7 +671,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
    width: 16px;
    height: 16px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px)  {
    .team-items {
       display: flex;
       flex-direction: row;
@@ -670,6 +683,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
       margin-bottom: 64px;
       margin-right: 24px;
    }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px)  {
    .team-item:nth-last-child(-n+2) {
       margin-bottom: 0px;
    }
@@ -1026,6 +1041,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
    .footer-container {
       display: flex;
       flex-direction: row;
+      justify-content: center;
       text-align: start;
       align-items: flex-start;
       flex-wrap: wrap;
@@ -1043,6 +1059,12 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
       width: 264px;
       margin-bottom: 0px;
       margin-right: 24px;
+   }
+   .footer-recommendation {
+      align-items: start;
+   }
+   .footer-social {
+      align-items: start;
    }
 }
 @media screen and (min-width: 1200px) {
